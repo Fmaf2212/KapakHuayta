@@ -74,6 +74,7 @@ body {
 .header .header__nav .imgLogo {
     filter: drop-shadow(6px 7px 1px var(--Brown));
     width: 14%;
+    transition: .3s ease width;
 }
 
 .header .header__nav .nav {
@@ -634,8 +635,56 @@ nav{
 
 }
 @media screen and (max-width: 1440px) {
-    .sectionNuestroTeam__body {
-        column-gap: 50px;
+    .header .header__textos h1{
+        font-size: 4em;
+    }
+    .header .header__textos{
+        padding-top: 250px;
+    }
+    .header .header__textos p,
+    .header .header__textos .header__textos__botones .btnQuieroEmprender{
+        font-size: 1em;
+    }
+
+    .main .sectionPorQueKapak .sectionPorQueKapak__top{
+        row-gap: 35px;
+    }
+    .main .sectionPorQueKapak .sectionPorQueKapak__top .titulo{
+        font-size: 2.6em;
+        margin-top: 40px;
+    }
+    .main .sectionPorQueKapak .sectionPorQueKapak__body article img{
+        width: 143px;
+    }
+    .main .sectionPorQueKapak .sectionPorQueKapak__top p,
+    .main .sectionPorQueKapak .sectionPorQueKapak__body article p{
+        font-size: 1.2em;
+    }
+    
+    .main .sectionProcesoKapak .sectionProcesoKapak__texto{
+        row-gap: 30px;
+    }
+    .main .sectionProcesoKapak__texto .titulo{
+        font-size: 2.6em;
+    }
+    .main .sectionProcesoKapak .sectionProcesoKapak__texto .sectionProcesoKapak__texto__contenido{
+        row-gap: 20px;
+    }
+    .main .sectionProcesoKapak .sectionProcesoKapak__texto .sectionProcesoKapak__texto__contenido article div h5, .main .sectionProcesoKapak .sectionProcesoKapak__texto .sectionProcesoKapak__texto__contenido article div p{
+        font-size: 1em;
+    }
+
+    .main .sectionNuestrosServicios .sectionNuestrosServicios__top{
+        row-gap: 30px;
+    }
+    .main .sectionNuestrosServicios .sectionNuestrosServicios__top .titulo{
+        font-size: 2.6em;
+    }
+    .main .sectionNuestrosServicios .sectionNuestrosServicios__top p{
+        font-size: 1em;
+    }
+    .feature_big_add_area{
+        padding-top: 0;
     }
     .slider_div .owl-item.active {
         margin-left: 360px;
@@ -644,6 +693,13 @@ nav{
     }
     .slick{
         width: 370px;
+        height: 470px;
+    }
+    .slick span{
+        font-size: 1.7em;
+    }
+    .slick p{
+        font-size: 1em;
     }
     .prevv {
         left: 31.5% !important
@@ -651,6 +707,30 @@ nav{
     .nextt {
         right: 31% !important;
     }
+
+    .sectionNuestroTeam{
+        justify-content: space-around;
+    }
+    .sectionNuestroTeam .titulo{
+        font-size: 2.6em;
+        margin-top: 40px;
+    }
+    .sectionNuestroTeam__body {
+        column-gap: 50px;
+    }
+    .sectionNuestroTeam .sectionNuestroTeam__body .profile{
+        flex-basis: 430px;
+        max-width: 400px;
+    }
+    .sectionNuestroTeam .sectionNuestroTeam__body .profile figure{
+        width: 50%;
+    }
+    .sectionNuestroTeam .sectionNuestroTeam__btnSaberMas button{
+        font-size: 1.1em;
+        padding: 15px 50px;
+    }
+    
+
     
 }
 
@@ -776,7 +856,7 @@ nav{
         gap: 20px;
     }
     .sectionNuestroTeam .sectionNuestroTeam__body .profile{
-        flex-basis: 170px;
+        flex-basis: 150px;
         max-width: 180px;
     }
     .sectionNuestroTeam .sectionNuestroTeam__body .profile figure{
@@ -790,7 +870,7 @@ nav{
     }
     .header .header__textos{
         row-gap: 25px;
-        padding-top: 170px;
+        padding-top: 100px;
         margin-top: 0px;
     }
     .header .header__textos h1{
@@ -820,14 +900,18 @@ nav{
 
     /* ¿Por qué Kapak? */
     .main .sectionPorQueKapak{
-        min-height: calc(100vh - 80px);
-        row-gap: 0;
+        min-height: 100vh;
+        row-gap: 40px;
         margin-bottom: 25px;
+        margin-top: 25px;
     }
     .main .sectionPorQueKapak .sectionPorQueKapak__top{
         row-gap: 15px;
         width: 80%;
-        padding-top: 80px;
+    }
+    .main .sectionPorQueKapak .sectionPorQueKapak__top .titulo{
+        font-size: 1.2em;
+        margin-top: 0;
     }
     .main .sectionPorQueKapak .sectionPorQueKapak__top p{
         font-size: .8em;
@@ -864,14 +948,15 @@ nav{
         width: 300px;
     }
     .main .sectionProcesoKapak .sectionProcesoKapak__texto {
-        row-gap: 30px;
+        row-gap: 15px;
         margin-top: 30px;
     } 
     .main .sectionProcesoKapak .sectionProcesoKapak__texto h2 {
         margin-top: 0;
+        font-size: 1.4em;
     }    
     .main .sectionProcesoKapak .sectionProcesoKapak__texto .sectionProcesoKapak__texto__contenido{
-        row-gap: 20px;
+        row-gap: 10px;
     }
     .main .sectionProcesoKapak .sectionProcesoKapak__texto .sectionProcesoKapak__texto__contenido article img{
         max-width: 100px;
@@ -889,11 +974,14 @@ nav{
         padding: 50px 0;
         display: flex;
         flex-direction: column;
-        row-gap: 40px;
+        row-gap: 10px;
     }
     .main .sectionNuestrosServicios .sectionNuestrosServicios__top{
         row-gap: 30px;
         margin-top: 60px;
+    }
+    .main .sectionNuestrosServicios .sectionNuestrosServicios__top .titulo{
+        font-size: 1.4em;
     }
     .main .sectionNuestrosServicios .sectionNuestrosServicios__top p{
         font-size: .8em;
@@ -928,8 +1016,9 @@ nav{
         padding: 50px 0;
         row-gap: 30px;
     }
-    .sectionNuestroTeam h2{
+    .sectionNuestroTeam .titulo{
         margin-top: 20px;
+        font-size: 1.4em;
     }
     .sectionNuestroTeam .sectionNuestroTeam__body .profile:nth-child(even) {
         pad:\Microsoft VS Code\resources\app\out\vs\code\electron-browser\workbench\workbench.htmldding-top: 0;
@@ -984,6 +1073,17 @@ nav{
     }
 }
 @media screen and (max-width: 320px) {
+    .header .header__textos h1{
+        font-size: 1.6em;
+    }
+    .header .header__textos{
+        row-gap: 15px;
+        padding-top: 80px;
+    }
+    .header .header__textos .header__textos__botones{
+        margin-top: 10px;
+    }
+
     .slider_div .owl-item.active {
         left: -403px;
     }
